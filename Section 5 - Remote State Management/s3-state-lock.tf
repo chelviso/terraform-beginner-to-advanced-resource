@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket = "kplabs-terraform-backend"
-    key    = "network/demo.tfstate"
+    key    = "network/demo.tfstate" #This is the path or subdirectory where the statefile will be stored
     region = "us-east-1"
     dynamodb_table = "terraform-state-locking"
   }
